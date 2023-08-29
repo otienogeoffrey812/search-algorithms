@@ -8,11 +8,8 @@ public class Main {
         int[] array = {23,56,12,5,8,9, 1,3,4};
 
         Arrays.sort(array);
-        System.out.println(Arrays.toString(array));
-
         var search = new Search();
-
-        var result = search.binarySearchRecursion(array, 57);
+        var result = search.binarySearchIterative(array, 56);
 
         System.out.println(result);
     }

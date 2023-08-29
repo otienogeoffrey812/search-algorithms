@@ -17,4 +17,22 @@ public class Search {
         }
         return   binarySearchRecursion(array, target, middle+1, right);
     }
+
+    public int binarySearchIterative(int[] array, int target){
+
+        int left = 0;
+        int right = array.length - 1;
+
+        while (left <= right){
+            int middle = (left + right)/2;
+            if(target == array[middle]) return middle;
+
+            if(array[middle] > target){
+                right = middle - 1;
+            }else if(array[middle] < target){
+                left = middle + 1;
+            }
+        }
+        return  -1;
+    }
 }

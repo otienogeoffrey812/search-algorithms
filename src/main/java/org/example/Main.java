@@ -12,7 +12,7 @@ public class Main {
 
         var search = new Search();
 
-        var result = search.binarySearch(array, 57);
+        var result = search.binarySearchRecursion(array, 57);
 
         System.out.println(result);
     }

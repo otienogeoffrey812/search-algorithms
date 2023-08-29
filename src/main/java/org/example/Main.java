@@ -9,7 +9,7 @@ public class Main {
 
         Arrays.sort(array);
         var search = new Search();
-        var result = search.jumpSearch(array, 56);
+        var result = search.exponentialSearch(array, 56);
 
         System.out.println(result);
     }

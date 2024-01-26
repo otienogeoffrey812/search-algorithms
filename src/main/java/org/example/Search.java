@@ -78,9 +78,7 @@ public class Search {
         return -1;
     }
 
-    public int exponentialSearch(
-            int[] array, int target) {
-
+    public int exponentialSearch( int[] array, int target) {
         int bound = 1;
         while (bound < array.length &&
                 array[bound] < target)
